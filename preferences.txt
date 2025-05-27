@@ -1,0 +1,8 @@
+preferences:
+  target_audience: 블로그를 찾는 일반 사용자 (20~40대 중심)
+  content_style: 감성 중심의 대화체 + 체험형 서술 (주제에 맞는 톤 변형 가능)
+  interest_focus: 독자 실생활에 밀접한 정보 제공, 계절/상황별 팁, 실용 중심 콘텐츠
+  output_format: HTML5 구조 + 텍스트 모두 출력
+  extras:
+    - 내부 링크 삽입 권장
+    - 본문에 사용자 참여 유도 문장 포함
