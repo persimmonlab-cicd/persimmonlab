@@ -1,5 +1,8 @@
 name: Aqua
-on: pull_request
+on:
+  push:
+    branches:
+      - main
 jobs:
   aqua:
     name: Aqua scanner
@@ -19,7 +22,7 @@ jobs:
         env:
           AQUA_KEY: ${{ secrets.AQUA_KEY }}
           AQUA_SECRET: ${{ secrets.AQUA_SECRET }}
-          GITHUB_TOKEN: ${{ github.token }}
+          GITHUB_TOKEN: ${{ github.git_token }}
           AQUA_URL: https://api.asia-1.supply-chain.cloud.aquasec.com
           CSPM_URL: https://asia-1.api.cloudsploit.com
           TRIVY_RUN_AS_PLUGIN: 'aqua'
